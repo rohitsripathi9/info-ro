@@ -4852,7 +4852,7 @@ var SHEET_DATA = [
                     htmlStr += '</div></div>';
                     
                     if (q.structured) {
-                        htmlStr += '<div class="lc-body">' + (q.problemStatement ? escText(q.problemStatement) : '') + '</div>';
+                        htmlStr += '<div class="lc-body">' + (q.problemStatement ? smartFormat(q.problemStatement) : '') + '</div>';
                         
                         if (q.inputFormat) {
                             htmlStr += '<div class="lc-example"><div class="lc-example-title">Input Format:</div>';
